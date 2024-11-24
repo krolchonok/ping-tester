@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ping Settings</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 10px;
+    }
+
+    label,
+    input,
+    button {
+      display: block;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <label style="font-size: 30px;">Ping Monitor</label>
+  <label for="urlInput">Target URL:</label>
+  <input type="url" id="urlInput" placeholder="https://example.com" required>
+  <label for="urlTime">Time interval (sec):</label>
+  <input type="text" id="urlTime" placeholder="2" required>
+  <button id="saveButton">Save</button>
+  <p id="statusMessage" style="color: green;"></p>
+  <p id="statusMessageTimeout" style="color: green;"></p>
+
+  <script src="popup.js"></script>
+</body>
+
+</html>

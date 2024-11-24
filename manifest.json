@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Ping Monitor",
+  "version": "1.0",
+  "description": "Displays ping to a specific source.",
+  "icons": {
+    "48": "icon.png"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": ["alarms", "storage"],
+  "action": {
+    "default_title": "Ping Monitor",
+    "default_popup": "popup.html"
+  },
+  "host_permissions": ["<all_urls>"],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "M7953c3b283e18ee344405c117dc4571db57403e8@ping-monitor"
+    }
+  }
+}
